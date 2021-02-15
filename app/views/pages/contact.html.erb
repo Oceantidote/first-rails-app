@@ -1,0 +1,13 @@
+<h2>Get in touch at hello@lewagon.com</h2>
+
+<h2>Who would you like to get in touch with?</h2>
+
+<% if @member %>
+  <h3>Here is the info for <%= @member %></h3>
+<% end %>
+
+
+<form action="/contact" method="get">
+  <input type="text" name="member" value="<%= params[:member] %>" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>

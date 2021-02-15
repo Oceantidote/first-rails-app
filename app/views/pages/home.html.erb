@@ -1,0 +1,12 @@
+<h1>Welcome to fake kitt</h1>
+<p>Now is <%= Time.now %><p>
+<!-- <a href="/about">Go to about</a> -->
+
+<!-- generate a link_to helper lt + tab -->
+
+<%= link_to "See about page", about_path %>
+<%= link_to "Get in contact", email_path  %>
+
+<%= link_to about_path do %>
+  <h1>GO TO ABOUT</h1>
+<% end %>
